@@ -1,0 +1,9 @@
+{
+  "name": "bilimbi",
+  "description": "bilimbi app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "^5.0.0-alpha.2"
+  }
+}

@@ -3,17 +3,20 @@
 
   <head>
     <meta http-equiv="content-type" content="text-html; charset=utf-8">
-
-    <title>
+    <style type="text/css">
       {% block css %}{% endblock %}
+    </style>
+    <title>
       {% block title %}{{ title }}{% endblock %} - Bilimbi
     </title>
-
+  </head>
+  <body>
+    <img src="img/smily.jpg" alt="logo" width="60" height="60">
     {% block header %}{% endblock %}
-
+    <hr>
     {% block body %}{% endblock %}
-
+    {% block content %}{{ author }}{% endblock %}
+    <hr>
     {% block footer %}{% endblock %}
-
   </body>
 </html>

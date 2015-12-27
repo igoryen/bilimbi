@@ -3,7 +3,11 @@ var app = express();
 var path = require('path');
 var routes  = require( "./routes" );
 
-app.use(express.static(path.join(__dirname + "/public")));
+var nunjucks = require( 'nunjucks' );
+nunjucks.configure('public', {
+  autoescape: true,
+  express: app
+});
 
 // routes
 app.get("/", routes.pages("index"));
